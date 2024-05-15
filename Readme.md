@@ -58,15 +58,16 @@ The script generates the following outputs:
 2. GNSStoPosition.csv: CSV file with the computed positions and additional columns (Pos.X, Pos.Y, Pos.Z, Lat, Lon, Alt).
 
 ## Results
-here is a part example of a 15 seconds walking measuremnt (gnss_log_2024_04_13_19_52_00.txt) of the nmea file
+here is an example of the fixed measuremnt (gnss_log_2024_04_13_19_51_17.txt) of the nmea file
 
-![alt text](https://i.imgur.com/YB3ogPO.jpeg)
+![alt text](https://i.imgur.com/sLFGeab.jpeg)
 
 and this is after our algorithm
 
-![alt text](https://i.imgur.com/dykPz2M.jpeg)
+![alt text](https://i.imgur.com/1Uc406M.jpeg)
 
-the results are quite similar and on average difference is around 20 meters, using the Haversine Formula to calculate.
+the results are quite similar and on average difference is around 35 meters, using the Haversine Formula to calculate.
+on other data sets the average difference is up to 60 meters.
 
 
 ## Contributors
