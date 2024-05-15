@@ -11,15 +11,16 @@ To run this project, you need:
 - Python 3.x
 - pandas
 - numpy
-- matplotlib
 - navpy
 - gnssutils
 - simplekml
+- georinex
+- unlzw3
 
 You can install the dependencies using pip:
 
 ```bash
-pip install pandas numpy matplotlib navpy gnssutils simplekml georinex unlzw3
+pip install pandas numpy navpy gnssutils simplekml georinex unlzw3
 ```
 
 ## Usage
@@ -55,6 +56,18 @@ python GnssToPosition.py
 The script generates the following outputs:
 1. GnssToRoute.kml: KML file containing the computed path with timestamps for each position.
 2. GNSStoPosition.csv: CSV file with the computed positions and additional columns (Pos.X, Pos.Y, Pos.Z, Lat, Lon, Alt).
+
+## Results
+here is a part example of a 15 seconds walking measuremnt (gnss_log_2024_04_13_19_52_00.txt) of the nmea file
+
+![alt text](https://i.imgur.com/YB3ogPO.jpeg)
+
+and this is after our algorithm
+
+![alt text](https://i.imgur.com/dykPz2M.jpeg)
+
+the results are quite similar and on average difference is around 20 meters, using the Haversine Formula to calculate.
+
 
 ## Contributors
 - Yael Rosen - 209498211
