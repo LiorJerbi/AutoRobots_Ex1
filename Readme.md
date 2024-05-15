@@ -66,7 +66,7 @@ and this is after our algorithm
 
 ![alt text](https://i.imgur.com/unRZKFd.jpeg)
 
-the results are quite similar and on average difference is around 30 meters, using the Haversine Formula to calculate.
+the results are quite similar and on average difference is around 30 meters at most, using the Haversine Formula to calculate.
 
 
 ## Contributors
