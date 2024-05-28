@@ -4,6 +4,8 @@
 
 This project provides a solution for processing GNSS (Global Navigation Satellite System) raw measurements. It includes functionalities to parse raw measurement log files, compute positioning using a naive algorithm, and generate visualization outputs in KML format.
 
+The algorithm implements the process of computing satellite positions from orbital parameters and transmission time. The results provide the x, y, and z coordinates of each satellite at the given transmission time. the position of the receiver is estimated using pseudorange measurements from multiple satellites, with the least squares approach we iteratively refine the estimate by minimizing the difference between predicted and measured pseudoranges, and clock bias estimates, while minimizing the impact of unusually differnt satellite readings.
+
 ## Requirements
 
 To run this project, you need:
